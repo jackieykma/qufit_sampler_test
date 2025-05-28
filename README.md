@@ -9,7 +9,8 @@ Need to place `polsim.py` in the root directory (obtain here: https://github.com
 ## How to run
 (1) Run <gen_src.py> to generate mock observations\
 (2) Run <run_qufit.py>:\
-    `python3 run_qufit.py -n [src_dir_name] -m [qufit_model] -k [nruns] -s [sampler] -p [qufit_path]`
+    `python3 run_qufit.py -n [src_dir_name] -m [qufit_model] -k [nruns] -s [sampler] -p [qufit_path]`\
+For this test, probably want to have high nruns (about 10,000), and try different samplers (`dynesty`, `pymultinest`, `nestle`)
 
 
 
