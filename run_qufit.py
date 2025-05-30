@@ -13,9 +13,7 @@ import glob
 
 def run_qufit(srcname, model, nruns, sampler, qufit_path):
    for n in range(nruns):
-      if os.path.exists(srcname+'/IQU_m'+str(model)+'_'+str(n)+'_'+sampler+'.json'):
-         print('Skipping for source '+srcname+', nrun='+str(n)+'...')
-      else:
+      while os.path.exists(srcname+'/IQU_m'+str(model)+'_'+str(n)+'_'+sampler+'.json') == False:
          print('Running for source '+srcname+', nrun='+str(n)+'...')
          os.system('python3 '+qufit_path+' '+srcname+'/IQU.tsv -m '+str(model)+' --sampler '+sampler+' --ncores 16 --nlive 128')
          ## Change name to reflect the nruns

@@ -18,14 +18,14 @@ src_list = [
 "freq_array": np.arange(800.e6, 1089.e6, 1.e6),
 "iDict": {"reffreq": 944.e6, "flux": 2.e-3, "alpha": 0.},
 "noise": 20.e-6, 
-"seed_list": np.arange(1000, 1010, 1)
+"seed_list": np.arange(1000, 1003, 1)
 },
 {"model_sel": 11,
 "pDict": {"fracPol1": 0.2, "fracPol2": 0.1, "psi01_deg": 155., "psi02_deg": 30., "RM1_radm2": 400., "RM2_radm2": -250.,},
 "freq_array": np.arange(800.e6, 1089.e6, 1.e6),
 "iDict": {"reffreq": 944.e6, "flux": 2.e-3, "alpha": 0.},
 "noise": 20.e-6,
-"seed_list": np.arange(10000, 10010, 1)
+"seed_list": np.arange(10000, 10003, 1)
 },
 ]
 
