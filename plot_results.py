@@ -18,18 +18,18 @@ src_list = {
       'psi0_deg': 55.,
       'RM_radm2': -250.,
       },
-   'src1_real2': {
-      'fracPol1': 0.2,
-      'fracPol2': 0.1,
-      'psi01_deg': 155.,
-      'psi02_deg': 30.,
-      'RM1_radm2': 400.,
-      'RM2_radm2': -250.,
-      },
+   #'src1_real2': {
+   #   'fracPol1': 0.2,
+   #   'fracPol2': 0.1,
+   #   'psi01_deg': 155.,
+   #   'psi02_deg': 30.,
+   #   'RM1_radm2': 400.,
+   #   'RM2_radm2': -250.,
+   #   },
    }
 
 ## Write down while samplers to look through
-sampler_list = ['pymultinest']
+sampler_list = ['pymultinest', 'nestle', 'dynesty', 'ultranest']
 
 
 for sampler in sampler_list:
