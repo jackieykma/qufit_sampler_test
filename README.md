@@ -1,5 +1,5 @@
 # qufit_test
-Test different samplers of RM-Tools QU-fitting
+Test different samplers of RM-Tools QU-fitting. [Get RM-Tools on GitHub here](https://github.com/CIRADA-Tools/RM-Tools)
 
 
 ## Preparations before running
