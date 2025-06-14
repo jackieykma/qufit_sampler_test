@@ -17,18 +17,21 @@ rm -rf polsim
 ```
 (3) Generate mock observations\
 \
-Edit `gen_src.py`: Put source parameters to within `src_list`. Polarisation parameters follow RM-Tools QU-fitting convention, as follows:\
+Edit `gen_src.py`: Put source parameters to within `src_list`. Polarisation parameters follow RM-Tools QU-fitting convention, as follows:
 - `model_sel`: QU-fitting model selected
 - `pDict`: Dictionary containing the polarisation parameters
 \
-Total intensity properties should also be specified within `iDict`:\
+\
+Total intensity properties should also be specified within `iDict`:
 - `reffreq`: Reference frequency at which `flux` is specified (Hz)
 - `flux`: Total intensity at `reffreq` (Jy)
 - `alpha`: Spectral index (S = S0 (nu/nu0)^alpha)
 \
+\
 Observation parameters are specified by:
 - `freq_array`: Array of observing frequency (Hz); note that bandwidth depolarisation is not taken into account
 - `noise`: Per-channel noise level for all Stokes parameter (Jy)
+\
 \
 Finally, the same simulated source can be mock-observed for multiple times, with everything kept equal except for the noise realisation. This is done by adjusting the `seed_list` list --- one seed should be provided for each realisation
 
