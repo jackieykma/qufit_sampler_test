@@ -32,6 +32,8 @@ Observation parameters are specified by:
 
 Finally, the same simulated source can be mock-observed for multiple times, with everything kept equal except for the noise realisation. This is done by adjusting the `seed_list` list --- one seed should be provided for each realisation
 
+At the end, generate the mock observations by `python3 gen_src.py`
+
 
 
 ## Running QU-fitting
