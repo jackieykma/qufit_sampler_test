@@ -39,7 +39,7 @@ Multiple runs of QU-fitting are to be performed on the same source to test the s
 `python3 run_qufit.py -n [src_dir_name] -m [qufit_model] -k [nruns] -s [sampler] -p [qufit_path]`\
 For this test, probably want to have high nruns (>~ 100), and try different samplers (`dynesty`, `pymultinest`, `nestle`)
 
-As an example, the following command is used as part of the tests shown in the RM-Tools paper (Van Eck et al. in prep.)
+As an example, the following command is used as part of the tests shown in the RM-Tools paper (Van Eck et al. in prep.)\
 `python3 run_qufit.py -n src0_real0 -m 1 -k 1000 -s pymultinest -p /path/to/RM-Tools/RMtools_1D/do_QUfit_1D_mnest.py`
 
 

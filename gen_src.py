@@ -13,6 +13,7 @@ import os
 ## Define a list of sources to simulate
 ## One randomisation seed will produce one simulation realisation
 src_list = [
+## "Faraday Simple" source to be used in RM-Tools paper (Van Eck et al. in prep.)
 {"model_sel": 1, 
 "pDict": {"fracPol": 0.3, "psi0_deg": 55., "RM_radm2": -250.,}, 
 "freq_array": np.arange(800.e6, 1089.e6, 1.e6),
@@ -20,12 +21,29 @@ src_list = [
 "noise": 20.e-6, 
 "seed_list": np.arange(1000, 1003, 1)
 },
+## "Faraday Complex" source to be used in RM-Tools paper (Van Eck et al. in prep.)
 {"model_sel": 11,
 "pDict": {"fracPol1": 0.2, "fracPol2": 0.1, "psi01_deg": 155., "psi02_deg": 30., "RM1_radm2": 400., "RM2_radm2": -250.,},
 "freq_array": np.arange(800.e6, 1089.e6, 1.e6),
 "iDict": {"reffreq": 944.e6, "flux": 2.e-3, "alpha": 0.},
 "noise": 20.e-6,
 "seed_list": np.arange(10000, 10003, 1)
+},
+## Same as "Faraday Simple" source above, but at lower S/N
+{"model_sel": 1,
+"pDict": {"fracPol": 0.3, "psi0_deg": 55., "RM_radm2": -250.,},
+"freq_array": np.arange(800.e6, 1089.e6, 1.e6),
+"iDict": {"reffreq": 944.e6, "flux": 2.e-3, "alpha": 0.},
+"noise": 20.e-6*30.,
+"seed_list": np.arange(100000, 100003, 1)
+},
+## Same as "Faraday Complex" source above, but at lower S/N
+{"model_sel": 11,
+"pDict": {"fracPol1": 0.2, "fracPol2": 0.1, "psi01_deg": 155., "psi02_deg": 30., "RM1_radm2": 400., "RM2_radm2": -250.,},
+"freq_array": np.arange(800.e6, 1089.e6, 1.e6),
+"iDict": {"reffreq": 944.e6, "flux": 2.e-3, "alpha": 0.},
+"noise": 20.e-6*15.,
+"seed_list": np.arange(1000000, 1000003, 1)
 },
 ]
 
